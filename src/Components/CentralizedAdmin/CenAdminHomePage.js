@@ -9,7 +9,7 @@ export default function CenAdminHome() {
     const [data, setData] = useState([]);
     useEffect(() => {
 
-        axios.get(process.env.REACT_APP_BASE_URL + "/readClubReqForm")
+        axios.get(process.env.REACT_APP_BASE_URL + "/readClubRequestForm")
             .then(res => {
                 setData(res.data);
             })
